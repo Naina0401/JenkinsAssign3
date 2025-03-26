@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Clone Repo') {
+            steps {
+                git branch: ‘main’, url: 'https://github.com/Naina0401/assign2.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building project...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying project...'
+            }
+        }
+    }
+}
