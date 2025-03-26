@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git branch: ‘main’, url: 'https://github.com/Naina0401/assign2.git'
+                git branch: ‘main’, url: 'https://github.com/shivapoorva/prac-2.git'
             }
         }
         stage('Build') {
